@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountryPickerView" customModule="CountryPickerView" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountryPickerView" customModule="CountryPickerView_CountryPickerView" customModuleProvider="target">
             <connections>
                 <outlet property="countryDetailsLabel" destination="4Mf-hk-O6C" id="1Dv-CS-6Cf"/>
                 <outlet property="flagImageView" destination="0ui-wz-fhH" id="aWg-vy-G4b"/>
+                <outlet property="flagImageViewHeight" destination="lWH-b5-XEI" id="p5T-RR-kXJ"/>
+                <outlet property="flagImageViewWidth" destination="CTF-Nq-qYP" id="aal-UM-7XL"/>
                 <outlet property="spacingConstraint" destination="f2R-wJ-cfm" id="lt5-i3-VM4"/>
             </connections>
         </placeholder>
@@ -25,10 +25,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="346" height="94"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ui-wz-fhH">
-                            <rect key="frame" x="0.0" y="0.5" width="256" height="94"/>
+                            <rect key="frame" x="0.0" y="29.5" width="50" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="CTF-Nq-qYP"/>
+                                <constraint firstAttribute="height" constant="35" id="lWH-b5-XEI"/>
+                            </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="(NG) +234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mf-hk-O6C">
-                            <rect key="frame" x="264" y="-0.5" width="82" height="94.5"/>
+                            <rect key="frame" x="58" y="0.0" width="288" height="94"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -40,7 +44,6 @@
                         <constraint firstAttribute="trailing" secondItem="4Mf-hk-O6C" secondAttribute="trailing" id="GOz-D9-UZP"/>
                         <constraint firstItem="4Mf-hk-O6C" firstAttribute="centerY" secondItem="rOy-96-GKY" secondAttribute="centerY" id="K0F-Oh-iPl"/>
                         <constraint firstItem="0ui-wz-fhH" firstAttribute="leading" secondItem="rOy-96-GKY" secondAttribute="leading" id="R2F-Rd-8PH"/>
-                        <constraint firstItem="0ui-wz-fhH" firstAttribute="height" secondItem="rOy-96-GKY" secondAttribute="height" id="SEs-55-b9c"/>
                         <constraint firstItem="0ui-wz-fhH" firstAttribute="centerY" secondItem="rOy-96-GKY" secondAttribute="centerY" id="bm9-la-i16"/>
                         <constraint firstItem="4Mf-hk-O6C" firstAttribute="leading" secondItem="0ui-wz-fhH" secondAttribute="trailing" constant="8" id="f2R-wJ-cfm"/>
                         <constraint firstItem="4Mf-hk-O6C" firstAttribute="height" secondItem="rOy-96-GKY" secondAttribute="height" id="grh-0A-Y04"/>
