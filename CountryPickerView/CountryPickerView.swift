@@ -38,8 +38,8 @@ public func !=(lhs: Country, rhs: Country) -> Bool {
 
 public class CountryPickerView: NibView {
    
-    @IBOutlet weak var flagImageViewWidth: NSLayoutConstraint!
-    @IBOutlet weak var flagImageViewHeight: NSLayoutConstraint!
+    @IBOutlet public weak var flagImageViewWidth: NSLayoutConstraint!
+    @IBOutlet public weak var flagImageViewHeight: NSLayoutConstraint!
     
     @IBOutlet weak var spacingConstraint: NSLayoutConstraint!
     @IBOutlet public weak var flagImageView: UIImageView! {
